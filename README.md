@@ -54,6 +54,7 @@ This project is a test automation framework designed to run both web and mobile 
 ## Running with JUnit runner
  Note:
  1. Before running Web test and Api test, Spring-boot application needs to be run to start the mock Api service where data will get retrieved.
+    
  2  Make sure to add the releavant test tag in TestRunner.java file before using the Junit runner
        E.g.: tags = "@api_test"
 
