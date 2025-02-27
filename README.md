@@ -52,12 +52,19 @@ This project is a test automation framework designed to run both web and mobile 
  **mvn test -Dcucumber.options="--tags @app_login"**
 
 ## Running with JUnit runner
+ Note:
+ 1. Before running Web test and Api test, Spring-boot application needs to be run to start the mock Api service where data will get retrieved.
+ 2  Make sure to add the releavant test tag in TestRunner.java file before using the Junit runner
+       E.g.: tags = "@api_test"
 
 1. web test
     **Run "TestRunner-Web"**
 
 2. App test
    **Run "TestRunner-App"**
+
+3. Api test
+   **Run "TestRunner-Api"**
 
 
 
