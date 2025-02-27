@@ -57,6 +57,8 @@ This project is a test automation framework designed to run both web and mobile 
     
  2  Make sure to add the releavant test tag in TestRunner.java file before using the Junit runner
        E.g.: tags = "@api_test"
+ 3. In order to run App tests, Hooks class needs to be passed along with stepdefinition in TestRunner.java file and can be removed when web and api tests need to be run:
+       code: glue = {"com.zl.mobileautomation.stepdefinition", "com.zl.mobileautomation.hooks"}
 
 1. web test
     **Run "TestRunner-Web"**
